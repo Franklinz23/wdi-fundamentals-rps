@@ -22,17 +22,31 @@ function randomPlay() {
 ////////////////////////////////////////////////
 
 function getPlayerMove(move) {
+    if ( move = 1) {
+        return "rock";
+    } else if ( move = 2 ) {
+        return "paper";
+    } else {
+        return "scissors";
+    }
+    
     // Write an expression that operates on a variable called `move`
     // If a `move` has a value, your expression should evaluate to that value.
     // However, if `move` is not specified / is null, your expression should equal `getInput()`.
-    return /* Your Expression */;
 }
 
 function getComputerMove(move) {
     // Write an expression that operates on a variable called `move`
     // If a `move` has a value, your expression should evaluate to that value.
     // However, if `move` is not specified / is null, your expression should equal `randomPlay()`.
-    return /* Your Expression */;
+    if (move < 0.33) {
+        return "rock";
+    } else if (move < 0.66) {
+        return "paper";
+    } else {
+        return "scissors";
+    }
+}
 }
 
 function getWinner(playerMove,computerMove) {
